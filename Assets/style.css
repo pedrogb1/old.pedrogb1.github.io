@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Golos Text', sans-serif;
+}
+
+:root {
+  font-size: 62.5%; /* 10px/16px */
+  --font-default: 'Montserrat';
+  --font-heading: 'Poppins';
+  --color-default: #FFF;
+  --color-secondary: #000;
+}
+
+header {
+  height: 100vh;
+  background-image: url('images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-default);
+}
+
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+
+
+body {
+  font-family: var(--font-default);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 4.4rem;
+}
+
+
+
+.section-content {
+  min-block-size: 80%;
+  display: flex;
+  justify-content: space-between 10px;
+  align-items: center;
+}
+
+
+.profile-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#profile-pic {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+
+.description{
+  font-size: 2em;
+  margin: 20px;
+  position: relative;
+  text-align: justify;
+  display: flex;
+}
+
+
+#secao-projetos ul{
+  display: flex;
+  background-color: #ececec;
+  gap: 3rem;
+  list-style: none;
+  justify-items: space-around;
+}
+    
+
+
+.button{
+  background-color: #000;
+  font-size: 2rem;
+  width: 88px;
+  text-align: center;
+  color: #ffffff;
+  padding: 1rem 3rem;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: background-color 0.3s ease;
+  transition-duration: .5s;
+}
+
+.button:hover {
+  font-size: 3rem;
+  width: 131px;
+}
+
+#linkedin {
+  background-color: #00bfff;
+}
+
+#linkedin:hover {
+  background-color: #ff0000;
+}
+
+#saiba-mais {
+  background-color: #000;
+}
+
+#saiba-mais:hover {
+  background-color: #ff0000;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* new code */
+@media (min-width: 768px) {
+  .avatar {
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  .avatar:hover{
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .img-proj {
+      border-radius: 0%;
+      margin: 1.5rem;
+      overflow: hidden;
+    }
+    
+    li.card {
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-image img{
+      height: 500px;
+      width: 400px;
+      border-radius: 10px;
+      margin:10px;
+    }
+
+    .card-image:hover{
+      /*animation-name: spin;
+      animation-duration: 0.2s;
+      animation-timing-function: ease-in-out;*/
+      animation: spin .2s ease-in-out;
+      
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(5deg);
+      }
+    }
+
+    @keyframes zoom-in {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+    }
+
+    .card-info {
+      font-size: 1.5rem;
+      align-items: center;
+      justify-items: center;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+}
+
+  #secao-orcamento{
+    height: 100vh;
+    background-color: rgb(150, 60, 60);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+
+  #secao-orcamento form{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #FFF;
+    border-radius: 10px;
+
+  }
+  #secao-orcamento h3{
+    position: absolute;
+    top: 37%;
+    background-color: #6A3093;
+    border-radius: 10px;
+
+  }
+  #secao-orcamento output{
+    grid-column: 2;
+  }
+  input[type=number]{
+    padding: 2rem;
+    background-color: #212121;
+    color: var(--color-default);
+    border:none;
+  }

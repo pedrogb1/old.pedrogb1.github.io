@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha página</title>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1 id="nome">Pedro Galante Branco</h1>
+      <h2 id="profissao">Cybersecurity Analyst</h2>
+  </header>
+  <section class="section-content">
+    <div class="profile-container">
+      <img class="avatar" id="profile-pic" src="https://media.licdn.com/dms/image/C4E03AQFrzVIIvJ0O-A/profile-displayphoto-shrink_800_800/0/1645555123793?e=2147483647&amp;v=beta&amp;t=TAhBLt_5bJpn7czHGRv0ZTs-ipfcNu3Lt0-XvylEy8M" alt="Foto de perfil">
+      <div class="buttons-container">
+      <a class="button" id="linkedin" href="https://br.linkedin.com/in/pedro-galante-branco">Linkedin</a>
+      <a class="button" id="saiba-mais" href="#">Saiba mais</a>
+       </div>
+    </div>
+    <div class="description">
+      <h3>Entusiasta e eterno aluno de Cybersegurança, focado em Pentesting e Red Team Operations. </h3>
+    </div>
+  </section>
+
+    <section id="secao-projetos">
+      <ul>
+        <li class="card">
+          <div class="card-image">
+            <img class="img-proj" src="https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1330&q=80" alt="CyberSecurity">
+          </div>
+          <div class="card-info">
+            <h3>CyberSecurity</h3>
+            <h4>Student</h4>
+            <p>FIAP | Cisco | Desec Security | XP Educação</p>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card-image">
+            <img class="img-proj" src="https://blog.isc2.org/.a/6a00e54f109b67883402b751952b0b200c-320wi" alt="CC Certification">
+          </div>
+          <div class="card-info">
+            <h3>Certified</h3>
+            <h4>(ISC)²: Certified in CyberSecurity</h4>
+            <p>Certified in CyberSecurity (CC) | AZ-900 | AI-900 | </p>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card-image">
+            <img class="img-proj" src="https://images.unsplash.com/photo-1542311121-071d8a3fd374?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Dev">
+          </div>
+          <div class="card-info">
+            <h3>Developer</h3>
+            <h4>Skills</h4>
+            <p>Python | C++ | CSS | HTML | SQL | R</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+<section id="secao-orcamento">
+  <form action="">
+    <h3>Orçamento</h3>
+    <label for="qtde">Qtde de Páginas</label>
+    <input type="number" name="" id="qtde" min="1" value="1">
+    <label for="js">Precisa de JS?</label>
+    <input type="checkbox" name="" id="js">
+    <label for="layout">Precisa de Layout?</label>
+    <div>
+      <input type="radio" name="layout" id="layout_sim">
+      <label for="layout_sim">Sim, preciso de layout</label>
+      <input type="radio" name="layout" id="layout_nao">
+      <label for="layout_sim">Não, já tenho</label>
+    </div>
+
+    <label for="prazo" id="label_prazo">Prazo</label>
+    <input type="range" name="" id="prazo" min="1" max="10">
+    
+
+    <output id="preco">R$ 0,00</output>
+  </form>
+</section>
+
+<script src="Assets/JS/script.js"></script>
+</body>
+</html>
