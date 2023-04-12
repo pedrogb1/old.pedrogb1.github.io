@@ -6,21 +6,23 @@ document.querySelector("#layout_nao").addEventListener("change", calcularOrcamen
 document.querySelector("#prazo").addEventListener("change", calcularOrcamento)
 
 function calcularOrcamento(){
-    let qtde = document.querySelector("#qtde").value;
-    let preco = qtde * 100
-    let js = document.querySelector("#js").checked
-    let layout = document.querySelector("#layout_sim").checked
-    let prazo = document.querySelector("#prazo").value
-    if (js) preco *= 1.1        //Mesmo que colocar if (js = True) { preco = preco * 1.1}
-    if (layout) preco += 500
+    // let qtde = document.querySelector("#qtde").value;
+    
+    let preco = qtde.value * 100
+    // let js = document.querySelector("#js").checked
+    // let layout = document.querySelector("#layout_sim").checked
+    // let prazo = document.querySelector("#prazo").value
+  
+    if (js.checked) preco *= 1.1        //Mesmo que colocar if (js = True) { preco = preco * 1.1}
+    if (layout_sim.checked) preco += 500
     preco += preco*(1.1 - 0.1*prazo)
 
     
     console.log(qtde, preco)
 
 
-    document.querySelector("#label_prazo").innerHTML = `Prazo (${prazo} semanas)`
+    label_prazo.innerHTML = `Prazo (${prazo.value} semanas)`
 
-    document.querySelector("#preco").innerHTML = "R$ " + preco.toFixed(2)
+    preco.innerHTML = "R$ " + preco.toFixed(2)
 
 }
