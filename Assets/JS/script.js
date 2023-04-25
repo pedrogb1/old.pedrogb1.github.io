@@ -15,7 +15,7 @@ function calcularOrcamento(){
   
     if (js.checked) preco *= 1.1        //Mesmo que colocar if (js = True) { preco = preco * 1.1}
     if (layout_sim.checked) preco += 500
-    preco += preco*(1.1 - 0.1*prazo)
+    preco += preco*(1.1 - 0.1*prazo.value)
 
     
     console.log(qtde, preco)
@@ -23,6 +23,6 @@ function calcularOrcamento(){
 
     label_prazo.innerHTML = `Prazo (${prazo.value} semanas)`
 
-    preco.innerHTML = "R$ " + preco.toFixed(2)
+    output.innerHTML = "R$ " + preco.toFixed(2)
 
 }

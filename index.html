@@ -17,14 +17,34 @@
     <div class="linhas"></div>
   </div>
 
-  <nav class="menu">
+<nav class="menu">
     <ul>
-      <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
-      <li><a href="#">Apresentação</a></li>
-      <li><a href="#">Projetos</a></li>
-      <li><a href="#">Orçamento</a></li>
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="#secao-apresentacao">
+                <i class="fa-solid fa-user"></i>
+                Apresentação
+            </a>
+        </li>
+        <li>
+            <a href="#secao-projetos">
+                <i class="fa-solid fa-code"></i>
+                Projetos
+            </a>
+        </li>
+        <li>
+            <a href="#secao-orcamento">
+                <i class="fa-solid fa-money-bill"></i>
+                Orçamento
+            </a>
+        </li>
     </ul>
-  </nav>
+</nav>
 
   <header>
     <div class="header-content">
@@ -94,14 +114,14 @@
     </div>
 
     <label for="prazo" id="label_prazo">Prazo</label>
-    <input type="range" name="" id="prazo" min="1" max="10">
+    <input type="range" id="prazo" min="1" max="10">
     
 
-    <output id="preco">R$ 0,00</output>
+    <output id="output">R$ 100,00</output>
   </form>
 </section>
 
-<script src="Assets/JS/script.js"></script>
-<script src="Assets/JS/menu.js"></script>
+<script src="./Assets/JS/script.js"></script>
+<script src="./Assets/JS/menu.js"></script>
 </body>
 </html>
