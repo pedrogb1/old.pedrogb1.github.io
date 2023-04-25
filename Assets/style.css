@@ -118,7 +118,9 @@ h2 {
   font-size: 4.4rem;
 }
 
-
+#nome {
+  font-color: #000
+}
 
 .section-content {
   min-block-size: 80%;
